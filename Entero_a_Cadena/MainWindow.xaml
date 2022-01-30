@@ -9,11 +9,11 @@
     <Grid>
         <StackPanel Margin="16" Orientation="Vertical">
             <TextBlock Text="Introduce el Numero a Convertir: "/>
-            <TextBox X:Name = "Numero" Text=""/>
+            <TextBox x:Name = "Numero" Text=""/>
             <StackPanel Orientation="Horizontal">
-                <Button Text="Convertir" Click="FuncionCadena">
+                <Button Content="Convertir" Click="Convertir"/>
             </StackPanel>
-        </StackPanel
+        </StackPanel>
 
     </Grid>
 </Window>

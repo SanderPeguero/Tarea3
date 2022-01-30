@@ -9,10 +9,10 @@
     <Grid>
         
         <StackPanel Margin="16" Orientation="Vertical">
-            <TextBlock text="Ingrese el Numero: "/>
+            <TextBlock Text="Ingrese el Numero: "/>
             <TextBox x:Name="NumeroTextBox"/>
             <StackPanel Orientation="Horizontal">
-                <Button Text="Calcular" Click="Calcular"/>
+                <Button Content="Calcular" Click="Calcular"/>
             </StackPanel>        
         </StackPanel>
 

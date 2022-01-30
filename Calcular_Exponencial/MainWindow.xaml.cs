@@ -25,6 +25,13 @@ namespace Calcular_Exponencial
             InitializeComponent();
         }
 
+        private void Calcular(object sender, RoutedEventArgs e)
+        {
+            int numero =int.Parse(Numero.Text);
+            int exponente = int.Parse(Exponente.Text);
+
+            MessageBox.Show("Resultado: " + (FuncionExponencial(numero, exponente)).ToString());
+        }
         int FuncionExponencial(int numero, int exponente)
         {
             int resultado = numero;
