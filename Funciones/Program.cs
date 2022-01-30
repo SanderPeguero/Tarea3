@@ -111,3 +111,13 @@ int Factorial(int n){
 
 
 // 5 Hacer una función que dado un número nos regrese una cadena donde se encuentre escrito en palabras.
+
+string[] array = new string[2];
+
+string FuncionCadena(int n){
+    return array[n];
+}
+
+void SetCadena(string palabra){
+    array[array.GetLength(0)] = palabra;
+}
