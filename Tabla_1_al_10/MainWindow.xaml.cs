@@ -25,7 +25,8 @@ namespace Tabla_1_al_10
             InitializeComponent();
         }
 
-        public void Calcular(){
+        public void Calcular(object sender, RoutedEventArgs e)
+        {
             int tabla = int.Parse(TablaDel.Text);
 
             FuncionTabla(tabla);
@@ -45,7 +46,18 @@ namespace Tabla_1_al_10
             }
 
             //return tabla;
-            MessageBox.Show(tabla);
+            MessageBox.Show(
+                "1 * " + tabla[0].ToString() + "= " + tabla[0].ToString() +
+                "\n 2 * " + tabla[0].ToString() + "= " + tabla[1].ToString() +
+                "\n 3 * " + tabla[0].ToString() + "= " + tabla[2].ToString() +
+                "\n 4 * " + tabla[0].ToString() + "= " + tabla[3].ToString() +
+                "\n 5 * " + tabla[0].ToString() + "= " + tabla[4].ToString() +
+                "\n 6 * " + tabla[0].ToString() + "= " + tabla[5].ToString() +
+                "\n 7 * " + tabla[0].ToString() + "= " + tabla[6].ToString() +
+                "\n 8 * " + tabla[0].ToString() + "= " + tabla[7].ToString() +
+                "\n 9 * " + tabla[0].ToString() + "= " + tabla[8].ToString() +
+                "\n 10 * " + tabla[0].ToString() + "= " + tabla[9].ToString()
+            );
         }
     }
 }

@@ -11,7 +11,7 @@
         <StackPanel Margin="16" Orientation="Vertical">
             <TextBlock Text="Ingrese el Numero: "/>
             <TextBox x:Name="NumeroTextBox"/>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Calcular" Click="Calcular"/>
             </StackPanel>        
         </StackPanel>

@@ -20,6 +20,7 @@ namespace Promedio_Edades
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,14 +29,32 @@ namespace Promedio_Edades
         int edadMenor = 0;
         int[] edades;
 
-        void Procesar()
+        List<int> lista = new List<int>();
+
+        void Procesar(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Promedio: " + CalculadoraPromedio(edades) + "\nEdad Mayor: " + edadMayor + "\nEdad Menor" + edadMenor );
+            try
+            {
+                edades = lista.ToArray();
+                MessageBox.Show("Promedio: " + CalculadoraPromedio(edades) + "\nEdad Mayor: " + edadMayor + "\nEdad Menor" + edadMenor);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        void AgregarEdad(object sender, EventArgs e)
+        void AgregarEdad(object sender, RoutedEventArgs e)
         {
-            edades[edades.GetLength(0)] = int.Parse(EdadTextBox.Text);
+            try
+            {
+                lista.Add(int.Parse(EdadTextBox.Text));
+                MessageBox.Show("Edad Agregada con Exito");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         int CalculadoraPromedio(int[] edades)
@@ -70,5 +89,6 @@ namespace Promedio_Edades
                 edadMenor = edad;
             }
         }
+
     }
 }

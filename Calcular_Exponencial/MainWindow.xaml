@@ -8,15 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-     <StackPanel Margin="16" Orientation="Vertical">
-        <TextBlock Text="Numero: "/>
-        <TextBox x:Name="Numero" Text=""/>
-        <TextBlock Text="Exponente: "/>
-        <TextBox x:Name="Exponente" Text=""/>
-        <StackPanel Margin="0,16,0,16" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="CALCULAR" Click="Calcular"/>
+        <StackPanel Margin="16" Orientation="Vertical">
+            <TextBlock Text="Numero: "/>
+            <TextBox x:Name="Numero" Text=""/>
+            <TextBlock Text="Exponente: "/>
+            <TextBox x:Name="Exponente" Text=""/>
+            <StackPanel Margin="0,16,0,16" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="CALCULAR" Click="Calcular"/>
+            </StackPanel>
         </StackPanel>
-    </StackPanel>
 
     </Grid>
 </Window>
